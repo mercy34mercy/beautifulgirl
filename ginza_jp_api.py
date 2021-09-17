@@ -9,7 +9,6 @@ def ginza(text_data):
     for sent in doc.sents:
         for token in sent:
             if token.pos_ == 'NOUN':
-                #url = get_image(top_key + token.orth_)
                 print(token.orth_)
                 return token.orth_
             #ここ直す
