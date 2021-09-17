@@ -13,6 +13,3 @@ def ginza(text_data):
                 print(token.orth_)
                 return token.orth_
             #ここ直す
-
-# text_data = "私の名前は小林"
-# ginza(text_data)
