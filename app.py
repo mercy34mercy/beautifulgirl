@@ -20,7 +20,7 @@ def hello():
     top_key = '美女'
     hello = get_key(top_key)
     hello2 = ginza(hello)
-    hello3 = get_image(hello2)
+    hello3 = get_image(top_key,hello2)
     return hello3
 
 
