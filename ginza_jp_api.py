@@ -11,4 +11,4 @@ def ginza(text_data):
             if token.pos_ == 'NOUN':
                 print(token.orth_)
                 return token.orth_
-            #ここ直す
+            
