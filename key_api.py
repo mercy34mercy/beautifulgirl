@@ -15,7 +15,7 @@ def get_key(top_key):
 
     for i in range(1):
         # 10ランク取得
-        pagenum = 1
+        pagenum = random.randint(1,30)
         load_url = "https://search.yahoo.co.jp/search?p="+top_key + "&ei=utf-8&b=" + \
                 str(pagenum)
 
