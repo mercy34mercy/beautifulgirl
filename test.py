@@ -41,4 +41,3 @@ for img in thumbnail_results[:download_num]:
 # 少し待たないと正常終了しなかったので3秒追加
 time.sleep(sleep_between_interactions+3)
 wd.quit()
-
