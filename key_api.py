@@ -41,5 +41,8 @@ def get_key(top_key):
 
                 result_title.append(a.strip('|'))
 
+    if(len(result_title) <=  5):
+        return "EOF"
+
     
     return result_title[random.randint(0,len(result_title)-1)]
