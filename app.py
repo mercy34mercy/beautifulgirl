@@ -31,4 +31,3 @@ def hello():
     return render_template("mainpage.html", name=hello4)
 
 
-
