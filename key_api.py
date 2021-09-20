@@ -45,4 +45,5 @@ def get_key(top_key):
         return "私の名前は小林さん"
 
     
-    return result_title[random.randint(0,len(result_title)-1)]
+    #return result_title[random.randint(0,len(result_title)-1)]
+    return "私の名前は小林さん"
