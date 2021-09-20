@@ -22,16 +22,16 @@ def indexs():
 @app.route('/url', methods=['POST','GET'])
 def hello():
     top_key = "美女"
-    # try:
-    #     if request.method == 'POST':
-    #         top_key = request.json['quali']
-    #         num = request.json["num"]
-    #     elif request.method == 'GET': 
-    #         top_key = "美女"
-    # except:
-    #     return jsonify({"top_key":"EOF","get_key":"EOF"})
-    # hello = get_key(top_key)
-    # if(hello == "EOF"):
-    #     return jsonify({"top_key":"EOF","get_key":"EOF"})
-    # hello2 = me(hello)
+    try:
+        if request.method == 'POST':
+            top_key = request.json['quali']
+            num = request.json["num"]
+        elif request.method == 'GET': 
+            top_key = "美女"
+    except:
+        return jsonify({"top_key":"EOF","get_key":"EOF"})
+    hello = get_key(top_key)
+    if(hello == "EOF"):
+        return jsonify({"top_key":"EOF","get_key":"EOF"})
+    hello2 = me(hello)
     return jsonify({"top_key":top_key,"get_key":"EOF"})
