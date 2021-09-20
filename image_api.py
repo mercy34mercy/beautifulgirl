@@ -24,4 +24,7 @@ def get_image(top_key,key):
         except:
             print("EOF")
     
+    if(len(url_list)==0):
+        return "https://sports-pctr.c.yimg.jp/r/iwiz-amd/20210920-00010013-goal-000-1-view.jpg?h=1200&cx=0&cy=0&cw=1920&ch=1200"
+    
     return url_list[random.randint(0,len(url_list)-1)]
