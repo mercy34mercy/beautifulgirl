@@ -19,13 +19,15 @@ def indexs():
     return 'hello'
 
 
-@app.route('/url', methods=['POST'])
+@app.route('/url', methods=['POST','GET'])
 def hello():
     top_key = "美女"
     try:
-        if request.method == 'GET':
+        if request.method == 'POST':
             top_key = request.json['quali']
             num = request.json["num"]
+        elif request.method == 'GET': 
+            top_key = "美女"
     except:
         return "EOF"
     hello = get_key(top_key)
