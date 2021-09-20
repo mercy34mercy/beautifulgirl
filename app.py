@@ -29,7 +29,7 @@ def hello():
         elif request.method == 'GET': 
             top_key = "美女"
     except:
-        return "EOF"
+        return jsonify({"top_key":"EOF","get_key":"EOF"})
     hello = get_key(top_key)
     if(hello == "EOF"):
         return jsonify({"top_key":"EOF","get_key":"EOF"})
