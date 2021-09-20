@@ -26,6 +26,4 @@ def hello():
     if(hello == "EOF"):
         return render_template("mainpage.html", name="https://sports-pctr.c.yimg.jp/r/iwiz-amd/20210918-00403683-usoccer-000-1-view.jpg?cx=0&cy=0&cw=1200&ch=750")
     hello2 = me(hello)
-    # hello3 = get_image(top_key,hello2)
-    #hello4 = great_img(top_key,hello2)
     return jsonify({"top_key":top_key,"get_key":hello2})
