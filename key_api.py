@@ -41,8 +41,8 @@ def get_key(top_key):
 
                 result_title.append(a.strip('|'))
 
-    if(len(result_title) <=  5):
-        return "私の名前は小林"
+    if(len(result_title) <=  9):
+        return "私の名前は小林さん"
 
     
     return result_title[random.randint(0,len(result_title)-1)]
