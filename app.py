@@ -33,5 +33,5 @@ def hello():
     hello = get_key(top_key)
     if(hello == "EOF"):
         return jsonify({"top_key":"EOF","get_key":"EOF"})
-    hello2 = me(hello)
-    return jsonify({"top_key":top_key,"get_key":"EOF"})
+    # hello2 = me(hello)
+    return jsonify({"top_key":top_key,"get_key":hello})
