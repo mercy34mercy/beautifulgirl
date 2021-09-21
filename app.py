@@ -7,8 +7,10 @@ from mecab_api import me
 from topkey import select_topkey
 from test import great_img
 from flask import *
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def index():
