@@ -41,7 +41,7 @@ def get_key(top_key):
 
                 result_title.append(a.strip('|'))
 
-    if(len(result_title) <=  9):
+    if(len(result_title) <=  4):
         return "関連画像"
 
     
