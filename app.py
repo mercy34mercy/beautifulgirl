@@ -33,6 +33,7 @@ def hello():
     except:
         return jsonify({"top_key":"ERRO","get_key":"ERRO"})
     hello = get_key(top_key)
+    
     if(hello == "EOF"):
         return jsonify({"top_key":"ERRO","get_key":"ERRO"})
     # hello2 = me(hello)

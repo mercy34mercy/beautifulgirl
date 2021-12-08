@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import re
 import random
 
+from mecab_api import me
+
 def get_key(top_key):
     # # 100ランク取得
     # load_url = "https://www.google.co.jp/search?hl=ja&source=hp&q=" + \
@@ -43,6 +45,15 @@ def get_key(top_key):
 
     if(len(result_title) <=  4):
         return "関連画像"
+    
+    index = random.randint(0,len(result_title)-1)
+    
+    while(1):
+        try:
+            return_key = me(result_title[index])
+            break
+        except:
+            i = 0
 
     
-    return result_title[random.randint(0,len(result_title)-1)]
+    return return_key
