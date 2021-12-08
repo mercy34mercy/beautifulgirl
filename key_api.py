@@ -14,7 +14,7 @@ def get_key(top_key):
     # html = requests.get(load_url)
     # web_data = BeautifulSoup(html.content, "html.parser")
     # list = web_data.findAll(True, {'class': 'BNeawe vvjwJb AP7Wnd'})
-
+    '''
     for i in range(1):
         # 10ランク取得
         pagenum = random.randint(1,30)
@@ -45,12 +45,14 @@ def get_key(top_key):
 
     if(len(result_title) <=  4):
         return "関連画像"
+    '''
     
-    index = random.randint(0,len(result_title)-1)
+    #index = random.randint(0,len(result_title)-1)
     
     while(1):
         try:
-            return_key = me(result_title[index])
+            #return_key = me(result_title[index])
+            return_key = me("私の名前は小林雅史です、サッカー")
             break
         except:
             i = 0
