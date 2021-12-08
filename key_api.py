@@ -49,13 +49,13 @@ def get_key(top_key):
     
     #index = random.randint(0,len(result_title)-1)
     
-    while(1):
-        try:
+    # while(1):
+    #     try:
             #return_key = me(result_title[index])
-            return_key = me("私の名前は小林雅史です、サッカー")
-            break
-        except:
-            i = 0
+    return_key = me("私の名前は小林雅史です、サッカー")
+        #     break
+        # except:
+        #     i = 0
 
     
     return return_key
